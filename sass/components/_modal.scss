@@ -1,0 +1,202 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    background-color: var(--main-white-color);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--main-white-color);
+}
+
+.close-btn-icon {
+    transition-property: fill;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function); 
+}
+
+.close-btn:focus .close-btn-icon,
+.close-btn:hover .close-btn-icon {
+    fill: var(--accent-color);
+}
+
+.order-form-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 3%;
+    text-align: center;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 1%;
+    color: var(--another-text-color);
+}
+
+.form-input {
+    margin: 0;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    font: inherit;
+    outline: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    font: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(16 / 12);
+    letter-spacing: 1%;
+    color: var(--logo-color);
+    
+    transition-property: border-color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+
+.form-input:focus {
+    border-color: var(--accent-color);
+}
+
+.form-input:focus ~ .modal-icon {
+    fill: var(--accent-color);
+}
+
+.modal-icon {
+    position: absolute;
+    left: 14px;
+    bottom: 11px;
+
+    transition-property: fill;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+.modal-icon {
+    width: 18px;
+    height: 18px;   
+}
+
+.comment-container {
+    margin-bottom: 20px;
+}
+
+.comment-input {
+    margin: 0;
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    font: inherit;
+    font-size: 12px;
+}
+
+.comment-input::placeholder {
+    font: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 1%;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.acception-container {
+    margin-bottom: 30px;
+}
+
+.acception-container .checkbox-icon {
+    width: 16px;
+    height: 15px;
+}
+
+.checkbox-icon .unchecked {
+    opacity: 1;
+
+    transition-property: opacity;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+.checkbox-input:checked + .checkbox-icon .unchecked {
+    opacity: 0;
+}
+
+.checkbox-icon .checked {
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+.checkbox-input:checked + .checkbox-icon .checked {
+    opacity: 1;
+}
+
+.acception-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.acception-text {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 3%;
+    color: var(--another-text-color);
+}
+
+.acception-link {
+    color: var(--accent-color);
+}
+
+.order-modal-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 52px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition-property: background-color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+.order-modal-btn:focus {
+    background-color: var(--active-btn-bgr);
+}

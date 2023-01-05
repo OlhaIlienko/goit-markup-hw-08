@@ -1,0 +1,27 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--main-bgr-color);
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.invitation {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: left;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+}
+
+.footer-icon-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}

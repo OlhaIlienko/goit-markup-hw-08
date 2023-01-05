@@ -1,0 +1,31 @@
+.footer-contacts-list {
+    width: 231px;
+}
+
+.footer-contacts-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-contacts-link {
+    font-style: normal;
+    font-family: inherit;
+    font-size: 14px;
+
+    transition-property: color;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: var(--accent-color);
+}
+
+.link-adress {
+    color: var(--main-white-color);
+}
+
+.link-mail,
+.link-tel {
+    color: var(--contacts-link-color);
+}

@@ -1,0 +1,103 @@
+.portfolio-section {
+    background-color: var(--main-white-color);
+}
+
+.filtr-btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.filtr-btn-item + .filtr-btn-item {
+    margin-left: 8px;
+}
+
+.filtr-btn-list .filtr-btn:hover,
+.filtr-btn-list .filtr-btn:focus {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ul-items-gap);
+}
+
+.project-card {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.project-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-list-content {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.projects-item-name {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+}
+
+.projects-item-type{
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--another-text-color);
+}
+
+.project-link {
+    display: block;
+
+    transition-property: box-shadow;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.overlay-project {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:hover .overlay-project,
+.project-link:focus .overlay-project {
+    transform: translateY(0);
+}
+
+.overlay-project-text {
+    padding-right: 24px;
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    color: var(--main-white-color);
+}

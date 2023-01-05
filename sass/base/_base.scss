@@ -1,0 +1,27 @@
+img {
+    display: block;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--main-text-color);
+}
+
+.activities-section__title,
+.team-section-title,
+.clients-section__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.icon {
+    fill: var(--main-icon-color);
+}

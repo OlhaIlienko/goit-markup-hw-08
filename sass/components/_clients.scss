@@ -1,0 +1,39 @@
+.clients {
+    display: flex;
+    gap: 30px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+    
+        transition-property: border;
+        transition-duration: var(--transition-dur);
+        transition-timing-function: var(--transition-function);
+    }
+
+    &__icon {
+        width: 106px;
+        height: 60px;
+    }
+}
+
+.clients__link svg {
+    transition-property: fill;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+.clients__link:hover svg,
+.clients__link:focus svg {
+    fill: var(--accent-color);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+    border: 1px solid var(--accent-color);
+}
