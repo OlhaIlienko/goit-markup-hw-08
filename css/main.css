@@ -396,18 +396,43 @@ ul {
 }
 
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.feature + .feature {
-  margin-left: var(--ul-items-gap);
+@media screen and (min-width: 480px) {
+  .feature + .feature {
+    margin-bottom: var(--ul-items-gap);
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature + .feature {
+    gap: var(--ul-items-gap);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature + .feature {
+    margin-left: var(--ul-items-gap);
+  }
 }
 
-.feature {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .feature__title {
   margin-bottom: 10px;
@@ -427,7 +452,6 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
@@ -441,6 +465,22 @@ ul {
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--another-text-color);
+}
+
+@media screen and (min-width: 480px) and (min-width: 767px) {
+  .feature__image {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature__image {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__image {
+    width: 270px;
+  }
 }
 
 .activities-section {
@@ -630,6 +670,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 .clients__link {
@@ -642,7 +684,6 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -652,6 +693,21 @@ ul {
           transition-duration: var(--transition-dur);
   -webkit-transition-timing-function: var(--transition-function);
           transition-timing-function: var(--transition-function);
+}
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__icon {
   width: 106px;
