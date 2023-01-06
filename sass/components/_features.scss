@@ -4,36 +4,19 @@
 }
 
 .features {
-    display: block;   
-
-    @media screen and (min-width: $tablet) {
-        display: flex;
-    }
-}
-
-.feature + .feature {
-    @media screen and (min-width: $mobile) {
-        margin-bottom: var(--ul-items-gap);
-    }
-
-    @media screen and (min-width: $tablet) {
-        gap: var(--ul-items-gap);
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin-left: var(--ul-items-gap);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .feature {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        flex-basis: calc((100% - 30px) / 2);     
-    }
+     @media screen and (min-width: $tablet) and (max-width: 1199px) {
+         flex-basis: calc((100% - 30px) / 2);     
+     }
 
-    @media screen and (min-width: $desktop) {
-        flex-basis: calc((100% - 90px) / 4);     
-    }
-  
+     @media screen and (min-width: $desktop) {
+         flex-basis: calc((100% - 90px) / 4);     
+     }
 
     &__title {
         margin-bottom: 10px;
@@ -42,6 +25,10 @@
         line-height: calc(16 / 14);
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        
+        @media screen and (max-width: 767px) {
+            text-align: center; 
+        }
     }
 
     &__image {
@@ -51,6 +38,18 @@
         height: 120px;
         margin-bottom: 30px;
         background-color: #F5F4FA;
+        
+        @media screen and (min-width: $mobile) and (min-width: 767px) {
+            width: 450px;
+        }
+    
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 270px;
+        }
     }
 
     &__icon {
@@ -63,19 +62,5 @@
         line-height: calc(24 / 14);
         letter-spacing: 0.03em;
         color: var(--another-text-color);
-    }
-}
-
-.feature__image {
-    @media screen and (min-width: $mobile) and (min-width: 767px) {
-        width: 450px;
-    }
-
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        width: 354px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: 270px;
     }
 }
