@@ -3,7 +3,11 @@
 }
 
 .header-nav-list {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
 }
 
 .header-nav-link {

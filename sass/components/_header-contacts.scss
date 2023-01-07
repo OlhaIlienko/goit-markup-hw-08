@@ -1,6 +1,14 @@
 .header-contacts-list {
-    display: flex;
-    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 .contacts-list-item + .contacts-list-item {
