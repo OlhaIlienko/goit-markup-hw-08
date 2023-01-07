@@ -8,5 +8,24 @@
     align-items: center;
 }
 
-menu-toggle 
-           menu-icon
+@media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+
+.menu-mobile-btn:hover svg,
+.menu-mobile-btn:focus svg {
+    fill: var(--accent-color);
+
+    transition-property: fill;
+    transition-duration: var(--transition-dur);
+    transition-timing-function: var(--transition-function);
+}
+
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--main-text-color);
+}

@@ -11,6 +11,11 @@
     align-self: center;
     margin-right: 93px;
     color: var(--logo-color);
+
+    @media screen and (max-width: 767px) {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
 }
 
 .logo-web {
