@@ -29,10 +29,14 @@
     position: fixed;
     top: 0;
     left: 0;
+
+    display: flex;
+    flex-direction: column;
+
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: #FFFFFF;
     z-index: 999;
   
     transform: translateX(100%);
@@ -52,13 +56,17 @@
   
   .mobile-menu {
     padding: 0;
-    margin: 0;
+    margin-bottom: auto;
     list-style: none;
   }
   
   .mobile-menu .link {
     display: block;
     padding: 10px;
-    color: #fff;
+    color: #212121;
     text-decoration: none;
+  }
+
+  .mobile-socials {
+    display: flex;
   }
