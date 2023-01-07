@@ -1,5 +1,9 @@
 .activities-section {
     background-color: var(--main-white-color);
+
+    @media screen and (max-width: 1199px) {
+        display: none;    
+    }
 }
 
 .activities {

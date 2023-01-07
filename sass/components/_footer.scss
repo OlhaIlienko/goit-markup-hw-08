@@ -6,7 +6,15 @@
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;       
+    }
+   
+
+    @media screen and (min-width: $desktop) {
+        align-items: baseline;       
+    }
 }
 
 .invitation {
@@ -14,10 +22,14 @@
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
-    text-align: left;
+    text-align: center;
     letter-spacing: 3%;
     text-transform: uppercase;
     color: var(--main-white-color);
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;  
+    }
 }
 
 .footer-icon-send {

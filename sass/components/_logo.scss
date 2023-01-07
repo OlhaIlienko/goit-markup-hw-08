@@ -23,6 +23,10 @@
 }
 
 .logo-footer {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     color: var(--main-white-color);
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }

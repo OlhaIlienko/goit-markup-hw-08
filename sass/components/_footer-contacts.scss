@@ -1,9 +1,16 @@
 .footer-contacts-list {
     width: 231px;
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        text-align: center;
+    }
 }
 
 .footer-contacts-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
 
 .footer-contacts-link {
