@@ -11,9 +11,15 @@
     }
 }
 
-.contacts-list-item + .contacts-list-item {
+ .contacts-list-item + .contacts-list-item {
     margin-left: 50px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-left: 0;
+        margin-top: 10px;
+ }
 }
+
 
 .header-contacts-link {
     display: flex;

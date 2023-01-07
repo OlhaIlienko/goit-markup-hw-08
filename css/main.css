@@ -341,6 +341,12 @@ ul {
 .contacts-list-item + .contacts-list-item {
   margin-left: 50px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list-item + .contacts-list-item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
 
 .header-contacts-link {
   display: -webkit-box;
@@ -1349,12 +1355,35 @@ ul {
   display: flex;
 }
 
+.mobile-socials-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .mobile-socials-link {
+  display: block;
   color: var(--accent-color);
   font-size: 18;
   line-height: 1.5714285714;
   text-align: left;
   letter-spacing: 2%;
+}
+
+.mobile-socials-link::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .portfolio-section {
