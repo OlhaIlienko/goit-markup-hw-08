@@ -5,12 +5,19 @@
 }
 
 .footer-container {
-    display: flex;
+
+    @media not screen and (min-width: $tablet) and (max-width: 1199px) {
+        display: flex; 
+    }
 
     @media screen and (max-width: 767px) {
         flex-direction: column;       
     }
    
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        flex-wrap: wrap; 
+        flex-basis: calc((100%-165px)/2);      
+    }
 
     @media screen and (min-width: $desktop) {
         align-items: baseline;       
