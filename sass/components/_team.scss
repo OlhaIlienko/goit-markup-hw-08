@@ -4,14 +4,19 @@
 
 .team-members-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        flex-basis: calc(( 100% - 30px) / 2);
+    }
 
-    @media screen and (max-width: 767px) {
-        flex-direction: column;
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(( 100% - 90px) / 4);
     }
 }
 
 .team-member {
-    flex-basis: calc(( 100% - 90px) / 4);
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-bottom-right-radius: 3px;
@@ -19,9 +24,11 @@
     background-color: var(--main-white-color);
 }
 
-.team-member + .team-member {
-    margin-left: var(--ul-items-gap);
-}
+
+
+// .team-member + .team-member {
+//     margin-left: var(--ul-items-gap);
+// }
 
 .team-member-info {
     padding-top: 30px;
