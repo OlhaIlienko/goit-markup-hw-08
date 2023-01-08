@@ -7,15 +7,73 @@
     margin-right: auto;
     margin-left: auto;
     background-color: #C4C4C4;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    //mobile screen
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
         ),
-    url(../images/order-background-img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    url(../images/hero/header_s@1x.jpg);
+
+    //mobile screen retine
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero/header_s@2x.jpg);
+    }
+
+    //tablet screen
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero/header_m@1x.jpg);
+
+    //tablet screen retine
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero/header_m@2x.jpg);
+    }
+
+    //desktop screen
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero/header_l@1x.jpg);
+    }
+
+    //desktop screen retine
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+    url(../images/hero/header_l@2x.jpg);
+    }
 }
 
 .hero-title {
