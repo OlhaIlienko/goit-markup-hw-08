@@ -1,7 +1,6 @@
 .social-links-list {    
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    margin-bottom: 60px;
 
     @media screen and (min-width: $desktop) {
         margin-right: 30px;
@@ -11,8 +10,7 @@
 
 .social-links-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
 .social-link {
@@ -50,18 +48,21 @@
 }
 
 .footer-social-links {
-    margin-left: 70px;
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;      
+    }
 }
 
 .social-links-list {
     display: flex;
-    justify-content: space-between;
+
     gap: 10px;
 }
 
 .footer-links-list {
-    margin-left: 0;
-    margin-right: 0;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-socials-link {

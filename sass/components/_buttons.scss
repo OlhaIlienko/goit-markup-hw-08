@@ -58,6 +58,11 @@
     text-align: center;
     justify-content: center;
     padding: 10px 28px;
+
+    @media screen and (max-width: 1199px) {
+        margin-right: auto;
+        margin-left: auto;       
+    }
 }
 
 .menu-toggle {

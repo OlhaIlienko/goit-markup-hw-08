@@ -1,15 +1,22 @@
 .footer-form {
-    margin-left: 93px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;       
+    }
 }
 
 .footer-form-send {
-    display: flex;
+    @media screen and (min-width: $desktop) {
+        display: flex;       
+    }
 }
 
 .footer-form-input {
     padding-left: 16px;
     margin-right: 12px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -20,6 +27,14 @@
     text-align: left;
     letter-spacing: 3%;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;       
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;       
+    }
 }
 
 .footer-form-input::placeholder {
@@ -31,11 +46,14 @@
 }
 
 .footer-form-title {
-    display: block;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     color: var(--main-white-color);
     text-transform: uppercase;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;       
+    }
 }
