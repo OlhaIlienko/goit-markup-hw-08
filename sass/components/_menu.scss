@@ -17,6 +17,10 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
 }
 
 .menu-container.is-open {
@@ -58,10 +62,10 @@
 .mobile-menu-link {
     display: block;
     font-weight: 500;
-    font-size: 40;
+    font-size: 40px;
     line-height: calc(47 / 40);
-    text-align: left;
     letter-spacing: 2%;
+    text-align: left;
     color: #212121;
 }
 
@@ -89,7 +93,7 @@
 
 .mobile-tel-link {
     color: var(--accent-color);
-    font-size: 34;
+    font-size: 34px;
     line-height: calc(40 / 34);
     text-align: left;
     vertical-align: top;
@@ -98,7 +102,7 @@
 
 .mobile-mail-link {
     color: var(--another-text-color);
-    font-size: 24;
+    font-size: 24px;
     line-height: calc(28 / 24);
     text-align: left;
     vertical-align: top;
@@ -119,8 +123,9 @@
 .mobile-socials-link {
     display: block;
     color: var(--accent-color);
-    font-size: 18;
-    line-height: calc(22 / 14);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
     text-align: left;
     letter-spacing: 2%;
 }

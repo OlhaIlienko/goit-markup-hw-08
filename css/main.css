@@ -1387,6 +1387,11 @@ ul {
   padding-bottom: 48px;
   padding-left: 40px;
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
@@ -1430,10 +1435,10 @@ ul {
 .mobile-menu-link {
   display: block;
   font-weight: 500;
-  font-size: 40;
+  font-size: 40px;
   line-height: 1.175;
-  text-align: left;
   letter-spacing: 2%;
+  text-align: left;
   color: #212121;
 }
 
@@ -1462,7 +1467,7 @@ ul {
 
 .mobile-tel-link {
   color: var(--accent-color);
-  font-size: 34;
+  font-size: 34px;
   line-height: 1.1764705882;
   text-align: left;
   vertical-align: top;
@@ -1471,7 +1476,7 @@ ul {
 
 .mobile-mail-link {
   color: var(--another-text-color);
-  font-size: 24;
+  font-size: 24px;
   line-height: 1.1666666667;
   text-align: left;
   vertical-align: top;
@@ -1499,8 +1504,9 @@ ul {
 .mobile-socials-link {
   display: block;
   color: var(--accent-color);
-  font-size: 18;
-  line-height: 1.5714285714;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
   text-align: left;
   letter-spacing: 2%;
 }
