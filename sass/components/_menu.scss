@@ -53,17 +53,17 @@ list-style: none;
 
 .mobile-menu-item {
     margin-bottom: 32px;
+}
+
+.mobile-menu .link {
+    display: block;
     font-weight: 500;
     font-size: 40;
     line-height: calc(47 / 40);
     text-align: left;
     letter-spacing: 2%;
-}
-
-.mobile-menu .link {
-display: block;
-color: #212121;
-text-decoration: none;
+    color: #212121;
+    text-decoration: none;
 }
 
 .mobile-menu-link:hover,
