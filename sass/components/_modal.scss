@@ -3,8 +3,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 681px;
     padding: 40px;
     background-color: var(--main-white-color);
     border-radius: 4px;

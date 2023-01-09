@@ -16,7 +16,7 @@
 .footer-form-input {
     padding-left: 16px;
     margin-right: 12px;
-    width: 450px;
+    min-width: 450px;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -29,7 +29,7 @@
     color: rgba(255, 255, 255, 0.6);
 
     @media screen and (min-width: $desktop) {
-        width: 358px;       
+        max-width: 358px;       
     }
 
     @media screen and (max-width: 1199px) {

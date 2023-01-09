@@ -8,12 +8,6 @@
     align-items: center;
 }
 
-@media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
-
 .menu-mobile-btn:hover svg,
 .menu-mobile-btn:focus svg {
     fill: var(--accent-color);

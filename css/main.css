@@ -227,6 +227,11 @@ ul {
   border-radius: 50%;
   outline: none;
 }
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -247,11 +252,6 @@ ul {
           align-items: center;
 }
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
 .menu-mobile-btn:hover svg,
 .menu-mobile-btn:focus svg {
   fill: var(--accent-color);
@@ -701,7 +701,12 @@ ul {
 
 .team-member-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-member-info {
+    padding-bottom: 30px;
+  }
 }
 
 .team-member-name {
@@ -832,12 +837,12 @@ ul {
   -webkit-transition-timing-function: var(--transition-function);
           transition-timing-function: var(--transition-function);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .clients__link {
     width: 210px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__link {
     width: 226px;
   }
@@ -993,7 +998,7 @@ ul {
 .footer-form-input {
   padding-left: 16px;
   margin-right: 12px;
-  width: 450px;
+  min-width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1006,7 +1011,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .footer-form-input {
-    width: 358px;
+    max-width: 358px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1099,8 +1104,8 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
+  max-height: 681px;
   padding: 40px;
   background-color: var(--main-white-color);
   border-radius: 4px;
@@ -1422,7 +1427,7 @@ ul {
   margin-bottom: 32px;
 }
 
-.mobile-menu .link {
+.mobile-menu-link {
   display: block;
   font-weight: 500;
   font-size: 40;
@@ -1430,7 +1435,6 @@ ul {
   text-align: left;
   letter-spacing: 2%;
   color: #212121;
-  text-decoration: none;
 }
 
 .mobile-menu-link:hover,

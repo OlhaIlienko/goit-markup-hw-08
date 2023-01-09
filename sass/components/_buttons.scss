@@ -79,6 +79,10 @@
     border: none;
     border-radius: 50%;
     outline: none;
+
+    @media (min-width: 768px) {
+          display: none;
+        }
   }
     
   .menu-toggle:hover,
