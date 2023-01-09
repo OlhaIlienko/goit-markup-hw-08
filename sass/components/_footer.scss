@@ -11,9 +11,11 @@
         flex-direction: column;       
     }
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding-left: 76px;
+        padding-right: 89px;
         flex-wrap: wrap; 
-        flex-basis: calc((100%-165px)/2);     
+        flex-basis: calc((100% - 165px) / 2);     
     }
    
     @media screen and (min-width: $desktop) {

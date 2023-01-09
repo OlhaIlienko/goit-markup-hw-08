@@ -8,14 +8,14 @@
     margin-left: auto;
     background-color: #C4C4C4;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
     @media screen and (min-width: $desktop) {
         padding-top: 200px;
         padding-bottom: 200px;
     }
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     //mobile screen
     background-image: linear-gradient(
@@ -81,7 +81,6 @@
     url(../images/hero/header_l@2x.jpg);
     }
 }
-
 
 .hero-title {
     max-width: 696px;

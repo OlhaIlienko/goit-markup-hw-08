@@ -1,5 +1,6 @@
 .social-links-list {    
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     gap: 10px;
@@ -44,6 +45,10 @@
         margin-bottom: 60px;      
     }
    
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        margin-left: 165px;      
+    }
+
     @media screen and (min-width: $desktop) {
         margin-left: 70px;      
     }
