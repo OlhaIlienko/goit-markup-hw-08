@@ -3,13 +3,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 528px;
-    max-height: 681px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: var(--main-white-color);
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    @media screen and (min-width: $desktop) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .close-btn {
@@ -175,10 +180,15 @@
 .acception-text {
     display: block;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 3%;
     color: var(--another-text-color);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
 }
 
 .acception-link {
