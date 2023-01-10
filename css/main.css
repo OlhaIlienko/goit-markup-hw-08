@@ -1014,15 +1014,15 @@ ul {
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 1200px) {
-  .footer-form-input {
-    min-width: 358px;
-  }
-}
 @media screen and (max-width: 1199px) {
   .footer-form-input {
     min-width: 450px;
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    min-width: 358px;
   }
 }
 

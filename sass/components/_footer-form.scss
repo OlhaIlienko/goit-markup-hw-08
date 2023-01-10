@@ -28,14 +28,19 @@
     letter-spacing: 3%;
     color: rgba(255, 255, 255, 0.6);
 
-    @media screen and (min-width: $desktop) {
-        min-width: 358px;       
-    }
+    // @media screen and (max-width: 479px) {
+    //     max-width: 450px;     
+    // }
 
     @media screen and (max-width: 1199px) {
         min-width: 450px;
         margin-bottom: 20px;       
     }
+
+    @media screen and (min-width: $desktop) {
+        min-width: 358px;       
+    }
+
 }
 
 .footer-form-input::placeholder {
