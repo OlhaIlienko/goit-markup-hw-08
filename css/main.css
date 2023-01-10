@@ -1519,6 +1519,16 @@ ul {
           justify-content: center;
 }
 
+.mobile-socials-item:not(:last-child):after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .mobile-socials-link {
   display: block;
   color: var(--accent-color);
@@ -1527,16 +1537,6 @@ ul {
   line-height: 1.2222222222;
   text-align: left;
   letter-spacing: 2%;
-}
-
-.mobile-socials-link::after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 22px;
-  background-color: rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .portfolio-section {
